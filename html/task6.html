@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task6</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .header {
+      height: 100px;
+    }
+
+    .green-row {
+      background-color: #556B2F;
+      height: 50px;
+    }
+
+    .blue-row {
+      background-color: #1E3A5F;
+      height: 50px;
+    }
+
+    .image-cell {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .image-cell img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .sidebar {
+      width: 20%;
+    }
+
+    .main-content {
+      width: 60%;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <!-- Header row with multiple empty cells -->
+     <tr>
+              <td colspan="1"></td>
+              <td  colspan="1"></td>
+              <td  colspan="1"></td>
+    </tr>
+    <tr>
+      <td class="header" colspan="1"></td>
+      <td class="header" colspan="1">
+        <table width="100%">
+          <tr><td></td></tr>
+          <tr><td></td></tr>
+          <tr><td></td></tr>
+          <tr><td></td></tr>
+        </table>
+      </td>
+      <td class="header" colspan="1"></td>
+    </tr>
+    <tr>
+              <td colspan="1"></td>
+              <td  colspan="1"></td>
+              <td  colspan="1"></td>
+    </tr>
+
+    <!-- Green row -->
+    <tr class="green-row">
+      <td colspan="3"></td>
+    </tr>
+
+    <!-- Image section -->
+    <tr>
+      <td class="sidebar"></td>
+      <td class="main-content image-cell">
+        <img src="https://up.yimg.com/ib/th?id=OIP.w1KK8WFG4cJ06al2ANtY2AHaFj&pid=Api&rs=1&c=1&qlt=95&w=143&h=107" alt="Blue Frog">
+      </td>
+      <td class="sidebar"></td>
+    </tr>
+
+    <!-- Blue row -->
+    <tr class="blue-row">
+      <td colspan="3"></td>
+    </tr>
+  </table>
+
+</body>
+</html>

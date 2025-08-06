@@ -1,0 +1,22 @@
+body{
+    background-color:rgb(186, 171, 171);
+}
+
+.heading{
+    color:red;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+}
+
+.anchor{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
