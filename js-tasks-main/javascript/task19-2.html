@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 19 - Callback Function</title>
+</head>
+<body>
+
+  <input type="text" id="username" placeholder="Enter your name">
+  <button onclick="getData(processName)">Submit</button>
+
+  <p id="output"></p>
+
+  <script>
+    function getData(callback) {
+      const name = document.getElementById("username").value;
+      callback(name);
+    }
+
+    function processName(name) {
+      document.getElementById("output").textContent = `Hello, ${name}!`;
+    }
+  </script>
+
+</body>
+</html>

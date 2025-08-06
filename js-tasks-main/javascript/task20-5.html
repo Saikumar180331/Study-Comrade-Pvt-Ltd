@@ -1,0 +1,17 @@
+<script>
+  class Book {
+    constructor(title, pages, type, author) {
+      this.title = title;
+      this.pages = pages;
+      this.type = type;
+      this.author = author;
+    }
+
+    type_of_book() {
+      return `${this.title} is a ${this.type} book by ${this.author}`;
+    }
+  }
+
+  const book1 = new Book("JavaScript Basics", 250, "Programming", "John Doe");
+  console.log(book1.type_of_book());
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 15</title>
+</head>
+<body>
+
+  <script>
+    // 1. Check if a number is a multiple of 3
+    let number = 10900;
+    if (number % 3 === 0) {
+      console.log(number + " is a multiple of 3");
+    } else {
+      console.log(number + " is NOT a multiple of 3");
+    }
+
+    // 2. Check if 'js' exists in string
+    let sentence = "I am learning js";
+    if (sentence.includes("js")) {
+      console.log("'js' exists in the sentence");
+    } else {
+      console.log("'js' does not exist in the sentence");
+    }
+
+    // 3. Calculate compound interest: ((p/r) * t) / 100
+    function calculateInterest(p, r, t) {
+      let interest = ((p / r) * t) / 100;
+      console.log(`Interest is: ${interest}`);
+    }
+
+    calculateInterest(10000, 5, 2); // example
+  </script>
+
+</body>
+</html>

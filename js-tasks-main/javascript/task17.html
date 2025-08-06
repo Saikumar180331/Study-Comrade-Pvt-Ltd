@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task 17 - Create Cards</title>
+</head>
+<body>
+
+  <div id="output"></div>
+
+  <script>
+    const outputTag = document.getElementById("output");
+    console.log(outputTag, 'output');
+
+    function createCards() {
+      for (let i = 0; i < 3; i++) {
+        const card = document.createElement("div");
+        card.style.width="150px";
+        card.style.border="1px solid black";
+        card.innerHTML = `<h4>This is card ${i + 1}</h4>`;
+        console.log(card, "card");
+        outputTag.appendChild(card);
+      }
+    }
+
+    createCards(); 
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 16 - Loops</title>
+</head>
+<body>
+
+  <script>
+    // 1. Display even numbers up to n
+    let n = prompt("Enter a number:");
+    console.log("Even numbers up to", n);
+    for (let i = 1; i <= n; i++) {
+      if (i % 2 === 0) console.log(i);
+    }
+
+    // 2. Vowel or Consonant checker
+    let char = prompt("Enter a char:");;
+    char = char.toLowerCase();
+    if (['a', 'e', 'i', 'o', 'u'].includes(char)) {
+      console.log(char + " is a vowel");
+    } else {
+      console.log(char + " is a consonant");
+    }
+
+    // 3. Count of even and odd from 1 to 999
+    let evenCount = 0, oddCount = 0;
+    for (let i = 1; i <= 999; i++) {
+      i % 2 === 0 ? evenCount++ : oddCount++;
+    }
+    console.log("Even:", evenCount, "Odd:", oddCount);
+
+    // 4. Count occurrence of a character
+    let str = "hello";
+    let target = "l";
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] === target) count++;
+    }
+    console.log(`'${target} occurs ${count} times`);
+
+    // 5. Sum & Average of array
+    let arr = [1, 9, 8];
+    let sum = 0;
+    for (let num of arr) {
+      sum += num;
+    }
+    let avg = sum / arr.length;
+    console.log("Sum:", sum, "Average:", avg);
+
+    // 6. Largest number in array
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > max) max = arr[i];
+    }
+    console.log("Largest number:", max);
+  </script>
+
+</body>
+</html>

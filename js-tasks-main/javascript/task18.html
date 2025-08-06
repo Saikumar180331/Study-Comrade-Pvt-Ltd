@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 18 - Form Validation</title>
+  <style>
+    form {
+      width: 300px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    input, select {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="number" id="age" placeholder="Age" required>
+    <input type="text" id="designation" placeholder="Designation" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="contact" placeholder="Contact (10 digits)" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="date" id="dob" placeholder="DOB" required>
+    <input type="file" id="files" multiple>
+    <button type="submit">Submit</button>
+    <p class="error" id="errorMsg"></p>
+  </form>
+
+  <script>
+    const form = document.getElementById("userForm");
+    const errorMsg = document.getElementById("errorMsg");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent form reload
+
+      const name = document.getElementById("name").value.trim();
+      const age = document.getElementById("age").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const contact = document.getElementById("contact").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (name === "") {
+        alert("Please enter your name");
+        return;
+      }
+
+      console.log(name, "name");
+      console.log(age, "age");
+      console.log(email, "email");
+      console.log(contact, "contact");
+      console.log(password, "password");
+
+      // Optionally show success message
+      errorMsg.textContent = " Form submitted!";
+      errorMsg.style.color = "green";
+    });
+  </script>
+
+</body>
+</html>
